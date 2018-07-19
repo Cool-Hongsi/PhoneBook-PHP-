@@ -10,21 +10,21 @@
     <?php
       $conn = mysqli_connect('localhost', 'root', '111111', 'phonebook');
 
-      // 중복 확인
+      // Check duplication
       $ID = $_POST['id'];
       $result = mysqli_query($conn, "SELECT * FROM user WHERE ID = '$ID'");
       $number_of_rows = mysqli_num_rows($result);
-      if($number_of_rows > 0){ // 같은 ID 값을 가지는 데이터가 0개 보다 크다.. 1개가 있다..
+      if($number_of_rows > 0){ // the data which has same ID exists
         echo("There is already existing ID<br><br> Try Agian!<br>");
       }
 
-      // 중복 x
+      // duplication x
       else{
         $InsertSQL = "INSERT INTO user (ID, FIRSTNAME, LASTNAME, PHONE, EMAIL) VALUES
         ('{$_POST['id']}', '{$_POST['firstname']}', '{$_POST['lastname']}', '{$_POST['phone']}', '{$_POST['email']}')";
         $result = mysqli_query($conn, $InsertSQL);
         $row = mysqli_fetch_array($result);
-        // 입력 받은 값으로 출력 {$_POST['id']}
+        
         print("<p>ID : {$_POST['id']}</p>");
         print("<p>First Name : {$_POST['firstname']}</p>");
         print("<p>Last Name : {$_POST['lastname']}</p>");
