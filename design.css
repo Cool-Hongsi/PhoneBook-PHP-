@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Gaegu|Merienda");
+
+*{
+  margin:0px;
+  padding:0px;
+  font-family: 'Gaegu', cursive;
+}
+
+ul{
+  display:inline-flex;
+  margin-top:20px;
+}
+
+li{
+  list-style: none;
+  margin-right:10%;
+  font-size:18px;
+}
+
+a{
+  text-decoration: none;
+  color:#f06540;
+}
+
+#navbar{
+    position:fixed;
+    display:inline-flex;
+    width:100%;
+    background-color:black;
+}
+
+#logo img{
+  width:60px;
+  height:60px;
+  margin-right: 550px;
+}
+
+#Homebackground{
+  width:100%;
+}
+
+#Home{
+  text-align: center;
+  padding-top:17%;
+  width:100vw;
+  height:100vh;
+  background-color:black;
+  color:white;
+}
+
+#Aboutbackgrouond{
+  width:100%;
+}
+
+#About{
+  display:inline-flex;
+  padding-top:17%;
+  width:80%;
+  height:100vh;
+  margin-left:100px;
+}
+
+#phonebook{
+  width:160px;
+  height:160px;
+  border:1px solid black;
+  border-radius: 10px;
+}
+
+#abouttext{
+  width:60%;
+  margin-left:40px;
+}
+
+#Createbackground{
+  width:100%;
+  background-color:black;
+}
+
+#Create{
+  padding-top:8%;
+  margin-left:100px;
+  width:70%;
+  height:100vh;
+  color:white;
+}
+
+#Readbackground{
+  width:100%;
+}
+
+#Read{
+  padding-top:14%;
+  margin-left:100px;
+  width:70%;
+  height:100vh;
+}
+
+#Updatebackground{
+  width:100%;
+  background-color: black;
+}
+
+#Update{
+  padding-top:8%;
+  margin-left:100px;
+  width:70%;
+  height:100vh;
+  color:white;
+}
+
+#Deletebackground{
+  width:100%;
+}
+
+#Delete{
+  padding-top:14%;
+  margin-left:100px;
+  width:70%;
+  height:100vh;
+  color:black;
+}
+
+.btn{
+  width:60px;
+  height:30px;
+  border:1px solid white;
+  border-radius: 10px;
+  color:white;
+  background-color: black;
+}
+
+.btn:hover{
+  color:black;
+  background-color:white;
+  transition:color, background-color, 1.5s;
+}
+
+h2{
+  font-size:30px;
+  animation-name:changecolor;
+  animation-duration:1.5s;
+  animation-iteration-count:infinite;
+}
+
+@keyframes changecolor{
+  0%{
+    color:#f54c4c;
+  }
+  25%{
+      color:#f4c641;
+  }
+  50%{
+      color:#8df441;
+  }
+  75%{
+      color:#41b6f4;
+  }
+  100%{
+      color:#c256e5 ;
+  }
+}
+
+label{
+  font-size:20px;
+}
+
+input[type=text], input[type=number], input[type=email]{
+  border:1px solid #ba4222;
+  border-radius: 10px;
+  width:18%;
+  height:25px;
+  padding-left:6px;
+}

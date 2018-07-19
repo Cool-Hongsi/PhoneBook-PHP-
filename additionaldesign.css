@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Gaegu|Merienda");
+
+*{
+  margin:0px;
+  padding:0px;
+  background-color:black;;
+  color:white;
+  font-family: 'Gaegu', cursive;
+  text-align: center;
+  margin-top:8px;
+  font-size:25px;
+}
+#notice{
+  margin-top:35px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+#btn{
+  display:inline-flex;
+}
+
+.btn{
+  width:110px;
+  border:1px solid white;
+  border-radius: 10px;
+  color:white;
+  background-color: black;
+}
+
+.btn:hover{
+  color:black;
+  background-color:white;
+  transition:color, background-color, 1.5s;
+}
